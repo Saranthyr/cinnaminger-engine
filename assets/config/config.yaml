@@ -2,7 +2,7 @@ width: '1920'
 height: '1080'
 speed: '0.1'
 size: '0.15'
-text: 'p i d o r'
+text: 'Pause'
 assets_folder: 'assets'
 images:
   - 'DVDLogo.png'

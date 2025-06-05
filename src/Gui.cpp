@@ -11,10 +11,6 @@ static int InputTextCallback(ImGuiInputTextCallbackData* data) {
     return 0;
 }
 
-void MenuWindow::SetMenuParams(const Menu& newMenu) {
-    menu = newMenu;
-}
-
 void MenuWindow::Render(Config& config) {
     ImGui::Begin("Hello");
     ImGui::Text("Current image: %d", config.selected_item);
