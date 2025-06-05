@@ -25,6 +25,10 @@ void Text::setPos(float xPos, float yPos) {
     text.setPosition({xPos - text.getCharacterSize(), yPos});
 }
 
+void Text::setColor(float r, float g, float b) {
+    text.setFillColor(sf::Color(r, g, b));
+}
+
 void Text::Update(sf::RenderTarget& target) {
 
 }

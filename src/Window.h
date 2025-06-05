@@ -21,14 +21,12 @@ class Window {
     public:
         Window();
         void Run();
-        // void AddToObjects(std::shared_ptr<RenderObject> object);
     private:
         void Initialize();
         void DrawObjects();
         void DrawUI();
         void UpdateUserInput();
         void Render();
-        Menu menu;
         MenuWindow ui;
         sf::RenderWindow window;
         sf::Clock clock;

@@ -20,10 +20,10 @@ class Sprite : public RenderObject {
     private:
         sf::Texture texture;
         sf::Sprite sprite;
-        float _xScale = 0.5f;
-        float _yScale = 0.5f;
-        float _xSpeed = 0.1f;
-        float _ySpeed = 0.1f;
+        float _xScale;
+        float _yScale;
+        float _xSpeed;
+        float _ySpeed;
         void CheckCollision(sf::RenderTarget& target);
 };
 

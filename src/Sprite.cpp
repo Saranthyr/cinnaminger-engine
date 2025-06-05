@@ -33,25 +33,25 @@ void Sprite::CheckCollision(sf::RenderTarget& target) {
     // Левая граница
     if (bounds.position.x < 0 && _xSpeed < 0.f) {
         _xSpeed *= -1.0f;
-        sprite.setPosition({0.f, pos.y});  // возвращаем в экран
+        sprite.setPosition({0.f+(bounds.size.x/2), pos.y});  // возвращаем в экран
     }
 
     // Верхняя граница
     if (bounds.position.y < 0 && _ySpeed < 0.f) {
         _ySpeed *= -1.0f;
-        sprite.setPosition({pos.x, 0.f});
+        sprite.setPosition({pos.x, 0.f+(bounds.size.y/2)});
     }
 
     // Правая граница
     if (bounds.position.x + bounds.size.x > windowSize.x && _xSpeed > 0.f) {
         _xSpeed *= -1.0f;
-        sprite.setPosition({windowSize.x - bounds.size.x, pos.y});
+        sprite.setPosition({windowSize.x - (bounds.size.x/2), pos.y});
     }
 
     // Нижняя граница
     if (bounds.position.y + bounds.size.y > windowSize.y && _ySpeed > 0.f) {
         _ySpeed *= -1.0f;
-        sprite.setPosition({pos.x, windowSize.y - bounds.size.y});
+        sprite.setPosition({pos.x, windowSize.y - (bounds.size.y/2)});
     }
 }
 

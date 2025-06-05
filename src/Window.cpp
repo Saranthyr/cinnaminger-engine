@@ -33,6 +33,7 @@ void Window::Initialize() {
     text->setText(config.text);
     text->setPos(static_cast<float>(config.width/2),
         static_cast<float>(config.height/2));
+    text->setColor(config.color[0], config.color[1], config.color[2]);
     objects.push_back(text);
 }
 
@@ -65,6 +66,7 @@ void Window::DrawUI(){
     auto image = std::dynamic_pointer_cast<Sprite>(objects[0]);
     auto text = std::dynamic_pointer_cast<Text>(objects[1]);
     text->setText(config.text);
+    text->setColor(config.color[0], config.color[1], config.color[2]);
     image->LoadTexture((std::filesystem::current_path() / config.assets_folder / config.images[config.selected_item]).string());
     image->setScale(config.size, config.size);
     image->setSpeed(config.speed, config.speed);

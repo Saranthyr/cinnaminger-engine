@@ -15,6 +15,7 @@ class Text : public RenderObject {
         void setText(const std::string& newText);
         void LoadFont(std::string Path);
         void setPos(float xPos, float yPos);
+        void setColor(float r, float g, float b);
         bool shouldDraw = true;
 
 };
