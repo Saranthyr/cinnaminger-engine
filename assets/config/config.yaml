@@ -1,7 +1,7 @@
-width: '1920'
-height: '1080'
-speed: '0.1'
-size: '0.15'
+width: '2560'
+height: '1440'
+speed: '2.5'
+size: '0.75'
 text: 'Pause'
 assets_folder: 'assets'
 images:
