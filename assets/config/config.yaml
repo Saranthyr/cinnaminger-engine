@@ -1,0 +1,15 @@
+width: '1920'
+height: '1080'
+speed: '0.1'
+size: '0.15'
+text: 'p i d o r'
+assets_folder: 'assets'
+images:
+  - 'DVDLogo.png'
+  - 'CDLogo.png'
+  - 'BluRayLogo.png'
+color:
+  - 255
+  - 255
+  - 255
+font: 'fonts\\sans.ttf'

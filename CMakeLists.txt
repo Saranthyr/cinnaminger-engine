@@ -1,9 +1,8 @@
 cmake_minimum_required(VERSION 3.30)
 
-# if(MSVC)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++17")
-# endif(MSVC)
-project(Project)
+project(CinnamingerEngine
+        VERSION 0.1
+        LANGUAGES CXX)
 
 add_subdirectory(ThirdParty)
 add_subdirectory(src)
