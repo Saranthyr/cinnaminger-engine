@@ -18,6 +18,7 @@ void Sprite::LoadTexture(std::string Path) {
         std::cerr << "Failed to load texture from: " << Path << std::endl;// Exit if texture fails to load
     }
     sprite.setTexture(texture, true);
+    sprite.setOrigin({sprite.getLocalBounds().size.x/2, sprite.getLocalBounds().size.y/2});
 }
 
 void Sprite::setPos(float xPos, float yPos) {
@@ -57,7 +58,6 @@ void Sprite::CheckCollision(sf::RenderTarget& target) {
 void Sprite::setScale(float xScale, float yScale) {
     _xScale = xScale;
     _yScale = yScale;
-    sprite.setOrigin({sprite.getGlobalBounds().size.x/2, sprite.getGlobalBounds().size.y/2});
 }
 
 void Sprite::setSpeed(float xSpeed, float ySpeed) {
